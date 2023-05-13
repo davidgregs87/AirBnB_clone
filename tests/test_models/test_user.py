@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from models.user import User
 from models import storage
 
+
 class TestUser(unittest.TestCase):
     """ unit test for all methods in BaseModel """
     @classmethod
@@ -48,6 +49,6 @@ class TestUser(unittest.TestCase):
         self.assertTrue(type(u2_dict), dict)
         self.assertTrue(type(u1_dict["created_at"]), str)
         self.assertTrue(type(u2_dict["updated_at"]), str)
-        assert ("__class__" in u1_dict.keys()) == True
+        assert ("__class__" in u1_dict.keys()) is True
         user3 = User(**u1_dict)
         assert self.user1 != user3

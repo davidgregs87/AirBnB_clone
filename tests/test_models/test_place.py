@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from models.place import Place
 from models import storage
 
+
 class TestPlace(unittest.TestCase):
     """ unit test for all methods in BaseModel """
     @classmethod
@@ -48,7 +49,7 @@ class TestPlace(unittest.TestCase):
         self.assertTrue(type(p2_dict), dict)
         self.assertTrue(type(p1_dict["created_at"]), str)
         self.assertTrue(type(p2_dict["updated_at"]), str)
-        assert ("__class__" in p1_dict.keys()) == True
+        assert ("__class__" in p1_dict.keys()) is True
         place3 = Place(**p1_dict)
         assert self.place1 != place3
 

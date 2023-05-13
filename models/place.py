@@ -3,8 +3,10 @@
 
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
-    """My place class, that inherits from BaseModel which gives information about a place"""
+    """My place class, that inherits from BaseModel which
+    gives information about a place"""
     city_id = ""
     user_id = ""
     name = ""

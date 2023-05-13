@@ -4,6 +4,7 @@ import os
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 
+
 class TestFileStorage(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -13,10 +14,10 @@ class TestFileStorage(unittest.TestCase):
 
     @classmethod
     def teardownClass(cls):
-       """Testing for removing file path"""
-       file_path = cls.store._FileStorage__file_path
-       os.remove(file_path)
-       print("Tearing down")
+        """Testing for removing file path"""
+        file_path = cls.store._FileStorage__file_path
+        os.remove(file_path)
+        print("Tearing down")
 
     def test_init(self):
         """Testing if object is an instance of class"""
@@ -37,7 +38,8 @@ class TestFileStorage(unittest.TestCase):
     def test_save(self):
         """Testing save method"""
         self.store.save()
-        self.assertTrue(os.path.exists(self.store._FileStorage__file_path), True)
+        self.assertTrue(os.path.exists(self.store._FileStorage__file_path),
+                        True)
 
     def test_reload(self):
         """Testing reload method"""

@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from models.state import State
 from models import storage
 
+
 class TestState(unittest.TestCase):
     """ unit test for all methods in BaseModel """
     @classmethod
@@ -44,7 +45,7 @@ class TestState(unittest.TestCase):
         self.assertTrue(type(s2_dict), dict)
         self.assertTrue(type(s1_dict["created_at"]), str)
         self.assertTrue(type(s2_dict["updated_at"]), str)
-        assert ("__class__" in s1_dict.keys()) == True
+        assert ("__class__" in s1_dict.keys()) is True
         state3 = State(**s1_dict)
         assert self.state1 != state3
 

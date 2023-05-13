@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from models.city import City
 from models import storage
 
+
 class TestCity(unittest.TestCase):
     """ unit test for all methods in BaseModel """
     @classmethod
@@ -48,7 +49,7 @@ class TestCity(unittest.TestCase):
         self.assertTrue(type(c2_dict), dict)
         self.assertTrue(type(c1_dict["created_at"]), str)
         self.assertTrue(type(c2_dict["updated_at"]), str)
-        assert ("__class__" in c1_dict.keys()) == True
+        assert ("__class__" in c1_dict.keys()) is True
         city3 = City(**c1_dict)
         assert self.city1 != city3
 

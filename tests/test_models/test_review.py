@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from models.review import Review
 from models import storage
 
+
 class TestPlace(unittest.TestCase):
     """ unit test for all methods in BaseModel """
     @classmethod
@@ -48,7 +49,7 @@ class TestPlace(unittest.TestCase):
         self.assertTrue(type(r2_dict), dict)
         self.assertTrue(type(r1_dict["created_at"]), str)
         self.assertTrue(type(r2_dict["updated_at"]), str)
-        assert ("__class__" in r1_dict.keys()) == True
+        assert ("__class__" in r1_dict.keys()) is True
         rev3 = Review(**r1_dict)
         assert self.rev1 != rev3
 

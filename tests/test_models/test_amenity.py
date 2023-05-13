@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 from models.amenity import Amenity
 from models import storage
 
+
 class TestCity(unittest.TestCase):
     """ unit test for all methods in BaseModel """
     @classmethod
@@ -44,7 +45,7 @@ class TestCity(unittest.TestCase):
         self.assertTrue(type(a2_dict), dict)
         self.assertTrue(type(a1_dict["created_at"]), str)
         self.assertTrue(type(a2_dict["updated_at"]), str)
-        assert ("__class__" in a1_dict.keys()) == True
+        assert ("__class__" in a1_dict.keys()) is True
         amen3 = Amenity(**a1_dict)
         assert self.amen1 != amen3
 
