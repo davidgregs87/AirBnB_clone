@@ -11,18 +11,15 @@ class BaseModel:
         """Importing storage from models"""
         date_fmt = '%Y-%m-%dT%H:%M:%S.%f'
         if not kwargs or len(kwargs) == 0:
-            # Checking if dictionary is empty
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = self.created_at
-            # Store the classname.id
             from models import storage
             storage.new(self)
         else:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':
                     value = datetime.strptime(value, date_fmt)
-# Remove the key "__class__" from kwargs
                 if key != '__class__':
                     setattr(self, key, value)
 
