@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """A command interpreter (console.py) to have some commands"""
 import cmd
 import shlex
@@ -132,8 +132,4 @@ class HBNBCommand(cmd.Cmd):
 
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) > 1:
-        HBNBCommand().onecmd(' '.join(sys.argv[1:]))
-    else:
-        HBNBCommand().cmdloop()
+    HBNBCommand().cmdloop()
