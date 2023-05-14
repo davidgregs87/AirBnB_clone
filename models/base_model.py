@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a file that include defined modules """
+"""a file that include defined class and some methods """
 import uuid
 from datetime import datetime
 
@@ -7,8 +7,7 @@ from datetime import datetime
 class BaseModel:
     """This defines all common attributes/methods for other classes """
     def __init__(self, *arg, **kwargs):
-        """Initializes all attributes"""
-        """Importing storage from models"""
+        """Initializing all class attributes"""
         date_fmt = '%Y-%m-%dT%H:%M:%S.%f'
         if not kwargs or len(kwargs) == 0:
             self.id = str(uuid.uuid4())
@@ -24,7 +23,8 @@ class BaseModel:
                     setattr(self, key, value)
 
     def __str__(self) -> str:
-        """Returns a string"""
+        """Returns a string representation of  the class name,
+        class id and class dictionary"""
         return ("[{}] ({}) {}".format(self.__class__.__name__, self.id,
                                       (self.__dict__)))
 
