@@ -17,7 +17,6 @@ classes = {"BaseModel": BaseModel}
 class HBNBCommand(cmd.Cmd):
     """command interpreter interface"""
     prompt = "(hbnb) "
-    intro = "Welcome to my command line interface"
 
     def do_quit(self, line):
         """Quits the program gracefully"""
