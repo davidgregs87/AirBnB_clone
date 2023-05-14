@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-The console module - command line interpreter
+The console module - command line interpreter linked
+to our models
 """
 
 import cmd
@@ -17,7 +18,7 @@ from models import storage
 
 class HBNBCommand(cmd.Cmd):
     """
-    Class for command line interpreter
+    Class for the command line interpreter
     """
     prompt = "(hbnb) "
 
@@ -27,7 +28,7 @@ class HBNBCommand(cmd.Cmd):
             ]
 
     def emptyline(self):
-        """Empty line"""
+        """Empty line if nothing is entered"""
         pass
 
     def do_quit(self, line):
@@ -38,7 +39,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, line):
         """
-        End of File Method - Quit program
+        End of File - Quit program
         """
         return True
 
