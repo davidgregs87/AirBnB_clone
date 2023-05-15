@@ -25,8 +25,10 @@ class BaseModel:
 
     def __str__(self) -> str:
         """Returns a string"""
-        return ("[{}] ({}) {}".format(self.__class__.__name__, self.id,
-                                      (self.__dict__)))
+        clasname = "[{}] ".format(self.__class__.__name__)
+        clas_id = "({}) ".format(self.id)
+        clas_dict = str(self.__dict__)
+        return clasname + clas_id + clas_dict
 
     def save(self):
         """updates the public instance attribute updated_at with the
