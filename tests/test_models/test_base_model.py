@@ -51,3 +51,7 @@ class TestBaseModel(unittest.TestCase):
         assert ("__class__" in b1_dict.keys()) is True
         base3 = BaseModel(**b1_dict)
         assert self.base1 != base3
+
+    def test_str(self):
+        """Testing my string return method"""
+        pass
