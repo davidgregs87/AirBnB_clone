@@ -1,3 +1,6 @@
+![image](https://github.com/davidgregs87/AirBnB_clone/assets/108700012/c83b2dab-ce26-4f6b-92fc-d20513970870)
+
+
 README CLONE AIRBNB
 Description
 In this project we create the first part of the clone of Arbnb, which one is about to create a console in order to get different commands because we are going to have Objects in our platform as Places, Cities, States, Amenities, Users, and Review based in a parent class called BaseModel. And we have to manage it so that have a interactive web application, that is why we have to create, update, show, count, destroy and print the differents instances that are in our platform.
