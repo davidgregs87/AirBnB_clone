@@ -1,0 +1,50 @@
+.places{
+    height: 50px;
+    width: 63%;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    font-size: 12px;    
+}
+
+.home{
+    height: 30px;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    border: 1px solid #ff5a5f;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-left: 32%;
+    align-items: center;
+    border-radius: 4px;
+}
+.tiny{
+    height: 35px;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ff5a5f;
+    margin-left: 53%;
+    margin-top: -37px;
+    font-size: 12px;
+    align-items: center;
+    border-radius: 4px;
+}
+.suite{
+    height: 35px;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ff5a5f;
+    margin-left: 42%;
+    font-size: 12px;
+    align-items: center;
+    border-radius: 4px;
+    border-width: -20px;
+    margin-top: 37px;
+}
+.suite:hover{
+    border-color: #ff5a5f;
+}
