@@ -1,8 +1,9 @@
 header{
     background-color: white;
-    height: 70px;
+    height: 55px;
     width: 100%;
     border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
     display: flex;
 }
 .logo{
