@@ -1,0 +1,14 @@
+/* Styling my footer with a green footer background height of 60px and width of 100%
+Align all  items to center
+etc
+*/
+footer{
+    background-color: #00ff00;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+}

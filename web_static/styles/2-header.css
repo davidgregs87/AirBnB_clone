@@ -1,0 +1,6 @@
+/* Styling the header with a red header background height of 70px and width of 100% */
+header{
+    background-color: #ff0000;
+    height: 70px;
+    width: 100%;
+} 
